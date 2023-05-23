@@ -1,0 +1,28 @@
+<form [formGroup]="connectForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="email">
+      <div *ngIf="connectForm.controls.email.errors && submitted">
+        <span *ngIf="connectForm.controls.email.errors['required']" class="invalid">
+          Veuilez renseigner un email
+        </span>
+        <span *ngIf="connectForm.controls.email.errors['email']" class="invalid">
+          Veuilez renseigner un email valide
+        </span>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" formControlName="password" class="form-control" id="password">
+      <div *ngIf="connectForm.controls.password.errors && submitted">
+        <span *ngIf="connectForm.controls.password.errors['required']" class="invalid">
+          Veuilez renseigner un mot de passe
+        </span>
+        <span *ngIf="connectForm.controls.password.errors['minlength']" class="invalid">
+          Veuilez renseigner un mot de passe de plus de 4 caractères
+        </span>
+      </div>
+      
+    </div>
+    <input type="submit" class="btn btn-success" (click)="onClick()">
+  </form>
