@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ReactiveFormsModule } from '@angular/forms';
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
