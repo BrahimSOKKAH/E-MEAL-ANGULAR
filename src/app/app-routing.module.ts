@@ -7,6 +7,7 @@ import { IngredientQuantiteComponent } from './ingredient-quantite/ingredient-qu
 
 const routes: Routes = [
   {path: 'ingredients', component: IngredientsComponent},
+  {path: '', component: IngredientsComponent},
   {path: 'ingredients-quantites', component: IngredientQuantiteComponent},
   {path:'update/:id', component: UpdateIngredientComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}
