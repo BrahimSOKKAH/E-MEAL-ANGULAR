@@ -5,7 +5,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-add-ingredient',
   templateUrl: './add-ingredient.component.html',
-  styleUrls: ['./add-ingredient.component.css']
+  //styleUrls: ['./add-ingredient.component.css']
 })
 export class AddIngredientComponent {
   @Output()

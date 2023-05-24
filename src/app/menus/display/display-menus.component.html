@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nom du menu</th>
+          <th scope="col">Description</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let menu of data">
+        <tr>
+          <td>{{ menu.id }} <!-- interpolation --></td>
+          <td>{{ menu.nom }} <!-- interpolation --></td>
+          <td>{{ menu.descriptionMenu }} <!-- interpolation --></td>
+          <td> 
+            <button class="btn btn-warning" [routerLink]="['/menus/update', menu.id]"> Modifier </button>
+            <button class="btn btn-danger" (click)="delete(menu.id)"> X </button>
+          </td>
+        </tr>
+      </tbody>
+</table>

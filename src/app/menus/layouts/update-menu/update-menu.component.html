@@ -1,0 +1,34 @@
+<form [formGroup]="menuForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="nom" class="form-label"> Nom du Menu </label>
+      <input type="text" formControlName="nom" class="form-control" id="nom" aria-describedby="nom">
+      <span *ngIf="menuForm.controls.nom.errors && submitted" class="invalid"> 
+        <span *ngIf="menuForm.controls.nom.errors['required']">
+          Veuillez renseigner le nom du menu
+        </span>
+        <span *ngIf="menuForm.controls.nom.errors['minlength']">
+          Vous devez renseigner un nom du menu de 2 caractères minimum
+        </span>
+        <span *ngIf="menuForm.controls.nom.errors['maxlength']">
+          Votre nom du menu ne doit pas exceder 50 caractères
+        </span>
+      </span>
+    </div>
+    
+    <div class="mb-3">
+      <label for="descriptionMenu" class="form-label"> Description du Menu </label>
+      <input type="text" formControlName="descriptionMenu" class="form-control" id="descriptionMenu">
+    </div>
+  
+    <div class="mb-3">
+      <label for="dateDebut" class="form-label"> Date de début </label>
+      <input type="date" formControlName="dateDebut" class="form-control" id="dateDebut">
+    </div>
+  
+    <div class="mb-3">
+      <label for="dateFin" class="form-label"> Date de fin </label>
+      <input type="date" formControlName="dateFin" class="form-control" id="dateFin">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">soumettre</button>
+  </form>

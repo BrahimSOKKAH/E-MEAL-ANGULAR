@@ -1,1 +1,6 @@
-<p>menus works!</p>
+<!-- composant affichant les données provenant de la page-->
+<app-display-menus [data]="menus" (id)="delete($event)"></app-display-menus>
+
+<!-- composant envoyant des données à la page -->
+<app-add-menu (data)="addMenu($event)" ></app-add-menu>
+
