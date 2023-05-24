@@ -20,6 +20,10 @@ import { DisplayComponent } from './ingredients/display/display.component';
 import { AddIngredientComponent } from './ingredients/layouts/add-ingredient/add-ingredient.component';
 import { UpdateIngredientComponent } from './ingredients/layouts/update-ingredient/update-ingredient.component';
 import { HttpClientModule } from '@angular/common/http';
+
+import { UpdateRecetteComponent } from './recettes/layouts/update-recette/update-recette.component';
+import { AddRecetteComponent } from './recettes/layouts/add-recette/add-recette.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
     RecettesFavoritesComponent,
     DisplayComponent,
     AddIngredientComponent,
-    UpdateIngredientComponent
+    UpdateIngredientComponent,
+    AddRecetteComponent,
+    UpdateRecetteComponent,
     ],
   imports: [
     BrowserModule,
