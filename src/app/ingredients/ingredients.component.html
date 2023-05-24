@@ -1,6 +1,6 @@
 
 <!-- composant affichant les données provenant de la page-->
-<app-display [data]="ingredients" (id)="delete($event)" ></app-display>
+<app-display-ingredients [data]="ingredients" (id)="delete($event)"></app-display-ingredients>
 
 <!-- composant envoyant des données à la page -->
 <app-add-ingredient (data)="addIngredients($event)" ></app-add-ingredient>

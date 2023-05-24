@@ -1,5 +1,6 @@
 import { IngredientQuantite } from "src/app/ingredient-quantite/models/ingredient-quantite.model";
 
+
 export enum TypePlat {
     E = 'Entrée',
     P = 'Plat principale',
@@ -20,8 +21,8 @@ interface RecettesInterface {
     nom: string,
     id: number,
     typePlat: TypePlat, 
-    descriptionrecette: string,
-    instructionrecette: string,
+    descriptionRecette: string,
+    instructionRecette: string,
     tempsDeCuisson : number,
     tempsDePreparation: number,
     niveauDeDifficulte: Difficulte,
@@ -38,8 +39,8 @@ class RecettesModel implements RecettesInterface {
     nom!: string;
     id!: number;
     typePlat!: TypePlat; 
-    descriptionrecette!: string;
-    instructionrecette!: string;
+    descriptionRecette!: string;
+    instructionRecette!: string;
     tempsDeCuisson !: number;
     tempsDePreparation!: number;
     niveauDeDifficulte!: Difficulte;
@@ -49,9 +50,10 @@ class RecettesModel implements RecettesInterface {
     ingredientQuantite!: IngredientQuantite[];
 
         
-    constructor(nom?: string, descriptionrecette?: string, tempsDePreparation?: number, tempsDeCuisson?: number, nombrePersonnes?: number, typePlat?: TypePlat, niveauDeDifficulte?: Difficulte, ingredientQuantite?: IngredientQuantite[]) {
+    constructor(nom?: string, descriptionRecette?: string,instructionRecette?: string, tempsDePreparation?: number, tempsDeCuisson?: number, nombrePersonnes?: number, typePlat?: TypePlat, niveauDeDifficulte?: Difficulte, ingredientQuantite?: IngredientQuantite[]) {
         if (nom) this.nom = nom;
-        if (descriptionrecette) this.descriptionrecette = descriptionrecette;
+        if (descriptionRecette) this.descriptionRecette = descriptionRecette;
+        if (instructionRecette) this.instructionRecette = instructionRecette;
         if (tempsDePreparation) this.tempsDePreparation = tempsDePreparation;
         if (tempsDeCuisson) this.tempsDeCuisson = tempsDeCuisson;
         if (typePlat) this.typePlat = typePlat;
@@ -59,7 +61,7 @@ class RecettesModel implements RecettesInterface {
         if (ingredientQuantite) this.ingredientQuantite = ingredientQuantite;
       }
     toString = (): string => {
-        return `nom : ${this.nom}, id: ${this.id}, description recette: ${this.descriptionrecette}, temps de préparation: ${this.tempsDePreparation}, temps de cuisson: ${this.tempsDeCuisson}, type de plat: ${this.typePlat}, difficulté: ${this.niveauDeDifficulte}, quantités d'ingrédients: ${this.ingredientQuantite.map(ingredientQuantite => ingredientQuantite.toString()).join(", ")}`;
+        return `nom : ${this.nom}, id: ${this.id}, description recette: ${this.descriptionRecette}, temps de préparation: ${this.tempsDePreparation}, temps de cuisson: ${this.tempsDeCuisson}, type de plat: ${this.typePlat}, difficulté: ${this.niveauDeDifficulte}, quantités d'ingrédients: ${this.ingredientQuantite.map(ingredientQuantite => ingredientQuantite.toString()).join(", ")}`;
       }
 }
 

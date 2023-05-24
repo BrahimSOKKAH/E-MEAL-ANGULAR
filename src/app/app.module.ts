@@ -16,13 +16,15 @@ import { PlatsComponent } from './plats/plats.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { RecettesComponent } from './recettes/recettes.component';
 import { RecettesFavoritesComponent } from './recettes-favorites/recettes-favorites.component';
-import { DisplayComponent } from './ingredients/display/display.component';
 import { AddIngredientComponent } from './ingredients/layouts/add-ingredient/add-ingredient.component';
 import { UpdateIngredientComponent } from './ingredients/layouts/update-ingredient/update-ingredient.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UpdateRecetteComponent } from './recettes/layouts/update-recette/update-recette.component';
 import { AddRecetteComponent } from './recettes/layouts/add-recette/add-recette.component';
+import { RouterModule } from '@angular/router';
+import { DisplayIgredientComponent } from './ingredients/display/display-ingredients.component';
+import { DisplayRecetteComponent } from './recettes/display/display-recettes.component';
 
 @NgModule({
   declarations: [
@@ -39,17 +41,19 @@ import { AddRecetteComponent } from './recettes/layouts/add-recette/add-recette.
     ProduitsComponent,
     RecettesComponent,
     RecettesFavoritesComponent,
-    DisplayComponent,
+    DisplayIgredientComponent,
     AddIngredientComponent,
     UpdateIngredientComponent,
     AddRecetteComponent,
     UpdateRecetteComponent,
+    DisplayRecetteComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule,
     HttpClientModule
   ],
   providers: [],

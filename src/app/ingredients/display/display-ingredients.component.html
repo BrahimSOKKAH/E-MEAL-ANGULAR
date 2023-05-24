@@ -11,7 +11,7 @@
           <td>{{ item.id }} <!-- interpolation --></td>
           <td>{{ item.nom }} <!-- interpolation --></td>
           <td> 
-            <button class="btn btn-warning" [routerLink]="['/update-ingredient', item.id]"> Modifier </button>
+            <button class="btn btn-warning" [routerLink]="['/ingredients/update', item.id]"> Modifier </button>
             <button class="btn btn-danger" (click)="delete(item.id)"> X </button>
         </td>
         </tr>

@@ -1,0 +1,31 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Description</th>
+      <th scope="col">Instruction</th>
+      <th scope="col">Temps de Préparation</th>
+      <th scope="col">Temps de Cuisson</th>
+      <th scope="col">Type de Plat</th>
+      <th scope="col">Difficulté</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of data">
+    <tr>
+      <td>{{ item.id }}</td>
+      <td>{{ item.nom }}</td>
+      <td>{{ item.descriptionRecette }}</td>
+      <td>{{ item.instructionRecette }}</td>
+      <td>{{ item.tempsDePreparation }}</td>
+      <td>{{ item.tempsDeCuisson }}</td>
+      <td>{{ item.typePlat }}</td>
+      <td>{{ item.niveauDeDifficulte }}</td>
+      <td>
+        <button class="btn btn-warning" [routerLink]="['/recettes/update', item.id]"> Modifier </button>
+        <button class="btn btn-danger" (click)="delete(item.id)"> X </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

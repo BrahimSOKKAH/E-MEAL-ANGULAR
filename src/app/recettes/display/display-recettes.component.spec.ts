@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DisplayComponent } from './display.component';
+import { DisplayRecetteComponent } from './display-recettes.component';
 
 describe('DisplayComponent', () => {
-  let component: DisplayComponent;
-  let fixture: ComponentFixture<DisplayComponent>;
+  let component: DisplayRecetteComponent;
+  let fixture: ComponentFixture<DisplayRecetteComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DisplayComponent]
+      declarations: [DisplayRecetteComponent]
     });
-    fixture = TestBed.createComponent(DisplayComponent);
+    fixture = TestBed.createComponent(DisplayRecetteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

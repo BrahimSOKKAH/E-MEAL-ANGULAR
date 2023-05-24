@@ -14,6 +14,68 @@
           </span>
         </span>
       </div>
-
+      <div class="mb-3">
+        <label for="typePlat" class="form-label">Type de plat</label>
+        <select formControlName="typePlat" class="form-control" id="typePlat">
+          <option *ngFor="let type of typePlatOptions">{{type}}</option>
+        </select>
+        <!-- Validation Errors for "typePlat" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="descriptionrecette" class="form-label">Description de la recette</label>
+        <textarea formControlName="descriptionrecette" class="form-control" id="descriptionrecette"></textarea>
+        <!-- Validation Errors for "descriptionrecette" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="instructionrecette" class="form-label">Instruction de la recette</label>
+        <textarea formControlName="instructionrecette" class="form-control" id="instructionrecette"></textarea>
+        <!-- Validation Errors for "instructionrecette" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="tempsDeCuisson" class="form-label">Temps de cuisson</label>
+        <input type="number" formControlName="tempsDeCuisson" class="form-control" id="tempsDeCuisson">
+        <!-- Validation Errors for "tempsDeCuisson" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="tempsDePreparation" class="form-label">Temps de préparation</label>
+        <input type="number" formControlName="tempsDePreparation" class="form-control" id="tempsDePreparation">
+        <!-- Validation Errors for "tempsDePreparation" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="niveauDeDifficulte" class="form-label">Niveau de difficulté</label>
+        <select formControlName="niveauDeDifficulte" class="form-control" id="niveauDeDifficulte">
+          <option *ngFor="let niveau of difficulteOptions">{{niveau}}</option>
+        </select>
+        <!-- Validation Errors for "niveauDeDifficulte" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="photoRecette" class="form-label">Photo de la recette</label>
+        <input type="text" formControlName="photoRecette" class="form-control" id="photoRecette">
+        <!-- Validation Errors for "photoRecette" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="typeDeCuisine" class="form-label">Type de cuisine</label>
+        <input type="text" formControlName="typeDeCuisine" class="form-control" id="typeDeCuisine">
+        <!-- Validation Errors for "typeDeCuisine" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="noteMoyenne" class="form-label">Note moyenne</label>
+        <input type="number" formControlName="noteMoyenne" class="form-control" id="noteMoyenne">
+        <!-- Validation Errors for "noteMoyenne" -->
+      </div>
+    
+      <div class="mb-3">
+        <label for="ingredientQuantite" class="form-label">Quantité d'ingrédients</label>
+        <textarea formControlName="ingredientQuantite" class="form-control" id="ingredientQuantite"></textarea>
+        <!-- Validation Errors for "ingredientQuantite" -->
+      </div>
     <button type="submit" class="btn btn-primary">soumettre</button>
   </form>

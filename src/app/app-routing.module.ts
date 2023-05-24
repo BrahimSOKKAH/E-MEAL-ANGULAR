@@ -9,11 +9,10 @@ import { UpdateRecetteComponent } from './recettes/layouts/update-recette/update
 
 const routes: Routes = [
   {path: 'ingredients', component: IngredientsComponent},
-  {path: '', component: IngredientsComponent},
   {path: 'ingredients-quantites', component: IngredientQuantiteComponent},
-  {path:'update-ingredient/:id', component: UpdateIngredientComponent}, 
+  {path:'ingredients/update/:id', component: UpdateIngredientComponent}, 
   {path:'recettes', component: RecettesComponent},
-  {path:'update-recette/', component: UpdateRecetteComponent},  
+  {path:'recettes/update/:id', component: UpdateRecetteComponent},  
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
