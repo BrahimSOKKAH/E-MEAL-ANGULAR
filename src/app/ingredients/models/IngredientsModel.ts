@@ -9,13 +9,13 @@ class IngredientsModel implements IngredientsInterface {
     nom!: string;
     id!: number;
         
-    constructor(nom?: string, task?: string) {
+    constructor(nom?: string) {
         if (nom) this.nom = nom
         
     }
 
     toString = () => {
-        return `titre : ${this.nom}, id: ${this.id}}`
+        return `nom : ${this.nom}, id: ${this.id}}`
     }
 }
 

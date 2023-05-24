@@ -2,30 +2,34 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { IngredientsInterface } from '../models/IngredientsModel';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TodoService {
 
-  private URI = 'http://localhost:3000/todos'
+export class IngredientService {
+
+  private URI = 'http://localhost:8080/ingredients'
 
   constructor(private http: HttpClient){}
 
-  getTodos = (): Observable<TodoInterface[]> => {
-    return this.http.get<TodoInterface[]>(`${this.URI}`)
+  getIngredients = (): Observable<IngredientsInterface[]> => {
+    return this.http.get<IngredientsInterface[]>(`${this.URI}`)
   }
-
-  addTodo = (data: TodoInterface):Observable<TodoInterface> => {
-    return this.http.post<TodoInterface>(`${this.URI}`, data);
+  getIngredientsById = (id: number):Observable<IngredientsInterface> => {
+    return this.http.get<IngredientsInterface>(`${this.URI}/${id}`)
+  }
+  addIngredient = (data: IngredientsInterface):Observable<IngredientsInterface> => {
+    return this.http.post<IngredientsInterface>(`${this.URI}`, data);
   }
 
   delete = (id: number): Observable<void> => {
     return this.http.delete<void>(`${this.URI}/${id}`)
   }
 
-  patchChecked = (id: number, data:{checked: boolean}) => {
-    return this.http.patch<TodoInterface>(`${this.URI}/${id}`, data)
+  putIngredient = (data: IngredientsInterface): Observable<IngredientsInterface> => {
+      return this.http.put<IngredientsInterface>(`${this.URI}/${data.id}`, data)
   }
 
 }

@@ -1,0 +1,18 @@
+<form [formGroup]="ingredientsForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="nom" class="form-label"> Nom d'ingredient </label>
+      <input type="text" formControlName="nom" class="form-control" id="nom" aria-describedby="nom">
+        <span *ngIf="ingredientsForm.controls.nom.errors && submitted" class="invalid"> 
+          <span *ngIf="ingredientsForm.controls.nom.errors['required']">
+            Veuillez renseigner le nom de l'ingredient
+          </span>
+          <span *ngIf="ingredientsForm.controls.nom.errors['minlength']">
+            Vous devez renseigner un nom de l'ingredient de 2 caractères minimum
+          </span>
+          <span *ngIf="ingredientsForm.controls.nom.errors['maxlength']">
+            Votre nom de l'ingredient ne doit pas exceder 50 caractères
+          </span>
+        </span>
+      </div>
+    <button type="submit" class="btn btn-primary">soumettre</button>
+  </form>
