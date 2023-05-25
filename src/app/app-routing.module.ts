@@ -9,7 +9,9 @@ const routes: Routes = [
   {path: 'ingredients', component: IngredientsComponent},
   {path:'ingredients/update/:id', component: UpdateIngredientComponent}, 
   {path:'recettes', component: RecettesComponent},
-  {path:'recettes/update/:id', component: UpdateRecetteComponent},  
+  {path:'recettes/update/:id', component: UpdateRecetteComponent},
+  {path:'menus/update/:id', component: UpdateRecetteComponent},
+  {path:'produits/update/:id', component: UpdateRecetteComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

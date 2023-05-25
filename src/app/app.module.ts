@@ -18,6 +18,7 @@ import { UpdateMenuComponent } from './menus/layouts/update-menu/update-menu.com
 import { DisplayIgredientComponent } from './ingredients/display/display-ingredients.component';
 import { AddMenuComponent } from './menus/layouts/add-menu/add-menu.component';
 import { DisplayMenusComponent } from './menus/display/display-menus.component';
+import { DisplayProduitsComponent } from './produits/display/display-produits/display-produits.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { DisplayMenusComponent } from './menus/display/display-menus.component';
     DisplayMenusComponent,
     AddMenuComponent,
     UpdateMenuComponent,
+    DisplayProduitsComponent,   
   ],
   imports: [
     BrowserModule,
