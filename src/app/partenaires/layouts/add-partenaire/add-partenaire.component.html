@@ -1,0 +1,54 @@
+<form [formGroup]="partenaireForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="nom" class="form-label">Nom du partenaire</label>
+      <input type="text" formControlName="nom" class="form-control" id="nom" aria-describedby="nom">
+        <span *ngIf="partenaireForm.controls.nom.errors && submitted" class="invalid"> 
+          <span *ngIf="partenaireForm.controls.nom.errors['required']">
+            Veuillez renseigner le nom du partenaire
+          </span>
+          <span *ngIf="partenaireForm.controls.nom.errors['minlength']">
+            Vous devez renseigner un nom du partenaire de 2 caractères minimum
+          </span>
+          <span *ngIf="partenaireForm.controls.nom.errors['maxlength']">
+            Votre nom du partenaire ne doit pas exceder 50 caractères
+          </span>
+        </span>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email du partenaire</label>
+      <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="email">
+        <span *ngIf="partenaireForm.controls.email.errors && submitted" class="invalid"> 
+          <span *ngIf="partenaireForm.controls.email.errors['required']">
+            Veuillez renseigner l'email du partenaire
+          </span>
+          <span *ngIf="partenaireForm.controls.email.errors['email']">
+            Vous devez renseigner un email valide
+          </span>
+        </span>
+    </div>
+    <div class="mb-3">
+      <label for="motDePasse" class="form-label">Mot de passe</label>
+      <input type="password" formControlName="motDePasse" class="form-control" id="motDePasse" aria-describedby="motDePasse">
+        <span *ngIf="partenaireForm.controls.password.errors && submitted" class="invalid">
+          <span *ngIf="partenaireForm.controls.password.errors['required']">
+            Veuillez renseigner le mot de passe
+          </span>
+          <span *ngIf="partenaireForm.controls.password.errors['minlength']">
+            Votre mot de passe doit comporter au moins 8 caractères
+          </span>
+        </span>
+    </div>
+    <div class="mb-3">
+      <label for="siteWeb" class="form-label">Site web du partenaire</label>
+      <input type="text" formControlName="siteWeb" class="form-control" id="siteWeb" aria-describedby="siteWeb">
+    </div>
+    <div class="mb-3">
+      <label for="logo" class="form-label">Logo du partenaire</label>
+      <input type="text" formControlName="logo" class="form-control" id="logo" aria-describedby="logo">
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description du partenaire</label>
+      <textarea formControlName="description" class="form-control" id="description" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Soumettre</button>
+</form>

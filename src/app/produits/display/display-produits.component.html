@@ -1,1 +1,37 @@
-<p>display-produits works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Quantité</th>
+          <th scope="col">Unité</th>
+          <th scope="col">Description</th>
+          <th scope="col">Catégorie</th>
+          <th scope="col">Photo</th>
+          <th scope="col">Prix</th>
+          <th scope="col">Gamme de prix</th>
+          <th scope="col">Partenaire</th>
+          <th scope="col">Ingrédient</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of data">
+        <tr>
+          <td>{{ item.id }} <!-- interpolation --></td>
+          <td>{{ item.nom }} <!-- interpolation --></td>
+          <td>{{ item.quantite }} <!-- interpolation --></td>
+          <td>{{ item.unite }} <!-- interpolation --></td>
+          <td>{{ item.description }} <!-- interpolation --></td>
+          <td>{{ item.categorie }} <!-- interpolation --></td>
+          <td>{{ item.photo }} <!-- interpolation --></td>
+          <td>{{ item.prix }} <!-- interpolation --></td>
+          <td>{{ item.gammePrix }} <!-- interpolation --></td>
+          <td>{{ item.partenaire.nom }} <!-- interpolation --></td>
+          <td>{{ item.ingredient.nom }} <!-- interpolation --></td>
+          <td> 
+            <button class="btn btn-warning" [routerLink]="['/produits/update', item.id]"> Modifier </button>
+            <button class="btn btn-danger" (click)="delete(item.id)"> X </button>
+          </td>
+        </tr>
+      </tbody>
+  </table>

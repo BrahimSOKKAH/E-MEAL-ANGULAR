@@ -1,0 +1,53 @@
+<form [formGroup]="produitsForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="nom" class="form-label"> Nom du produit </label>
+      <input type="text" formControlName="nom" class="form-control" id="nom" aria-describedby="nom">
+    </div>
+
+    <div class="mb-3">
+      <label for="quantite" class="form-label"> Quantité du produit </label>
+      <input type="number" formControlName="quantite" class="form-control" id="quantite">
+    </div>
+
+    <div class="mb-3">
+      <label for="unite" class="form-label"> Unité du produit </label>
+      <input type="text" formControlName="unite" class="form-control" id="unite">
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label"> Description du produit </label>
+      <textarea formControlName="description" class="form-control" id="description"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="categorie" class="form-label"> Catégorie du produit </label>
+      <input type="text" formControlName="categorie" class="form-control" id="categorie">
+    </div>
+
+    <div class="mb-3">
+      <label for="photo" class="form-label"> Photo du produit </label>
+      <input type="text" formControlName="photo" class="form-control" id="photo">
+    </div>
+
+    <div class="mb-3">
+      <label for="prix" class="form-label"> Prix du produit </label>
+      <input type="number" formControlName="prix" class="form-control" id="prix">
+    </div>
+
+    <div class="mb-3">
+      <label for="gammePrix" class="form-label"> Gamme de prix du produit </label>
+      <input type="text" formControlName="gammePrix" class="form-control" id="gammePrix">
+    </div>
+
+    <div class="mb-3">
+      <label for="partenaire" class="form-label"> Partenaire du produit </label>
+      <input type="text" formControlName="partenaire" class="form-control" id="partenaire">
+    </div>
+
+    <div class="mb-3">
+      <label for="ingredient" class="form-label"> Ingrédient du produit </label>
+      <input type="text" formControlName="ingredient" class="form-control" id="ingredient">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Soumettre</button>
+</form>

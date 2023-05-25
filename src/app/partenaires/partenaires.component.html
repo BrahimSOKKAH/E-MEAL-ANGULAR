@@ -1,1 +1,5 @@
-<p>partenaires works!</p>
+<!-- composant affichant les données provenant de la page-->
+<app-display-partenaires [data]="partenaires" (id)="delete($event)"></app-display-partenaires>
+
+<!-- composant envoyant des données à la page -->
+<app-add-partenaire (data)="addPartenaires($event)" ></app-add-partenaire>

@@ -6,6 +6,10 @@ import { RecettesComponent } from './recettes/recettes.component';
 import { UpdateRecetteComponent } from './recettes/layouts/update-recette/update-recette.component';
 import { MenusComponent } from './menus/menus.component';
 import { EMealComponent } from './e-meal/e-meal.component';
+import { PartenairesComponent } from './partenaires/partenaires.component';
+import { UpdateMenuComponent } from './menus/layouts/update-menu/update-menu.component';
+import { UpdatePartenaireComponent } from './partenaires/layouts/update-partenaire/update-partenaire.component';
+import { UpdateProduitComponent } from './produits/layouts/update-produit/update-produit.component';
 
 const routes: Routes = [
   {path:'', component: EMealComponent},
@@ -15,8 +19,15 @@ const routes: Routes = [
   {path:'recettes', component: RecettesComponent},
   {path:'menus', component: MenusComponent},
   {path:'recettes/update/:id', component: UpdateRecetteComponent},
-  {path:'menus/update/:id', component: UpdateRecetteComponent},
-  {path:'produits/update/:id', component: UpdateRecetteComponent},
+  {path:'menus/update/:id', component: UpdateMenuComponent},
+  //{path:'produits/update/:id', component: UpdateProduitsComponent},
+  {path: 'partenaires', component: PartenairesComponent},
+  {path:'partenaires/update/:id', component: UpdatePartenaireComponent},
+  {path:'produits', component: UpdateProduitComponent},
+  {path:'produits/update/:id', component: UpdateProduitComponent}, 
+
+
+
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

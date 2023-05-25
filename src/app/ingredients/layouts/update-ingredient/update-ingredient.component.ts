@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-update-ingredient',
   templateUrl: './update-ingredient.component.html',
-  styleUrls: ['./update-ingredient.component.css']
+  //styleUrls: ['./update-ingredient.component.css']
 })
 export class UpdateIngredientComponent implements OnInit {
 

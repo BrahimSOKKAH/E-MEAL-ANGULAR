@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Email</th>
+          <th scope="col">Site Web</th>
+          <th scope="col">Logo</th>
+          <th scope="col">Description</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let partenaire of data">
+        <tr>
+          <td>{{ partenaire.id }}</td>
+          <td>{{ partenaire.nom }}</td>
+          <td>{{ partenaire.email }}</td>
+          <td>{{ partenaire.siteWeb }}</td>
+          <td>{{ partenaire.logo }}</td>
+          <td>{{ partenaire.description }}</td>
+          <td> 
+            <button class="btn btn-warning" [routerLink]="['/partenaires/update', partenaire.id]"> Modifier </button>
+            <button class="btn btn-danger" (click)="delete(partenaire.id)"> X </button>
+          </td>
+        </tr>
+        
+      </tbody>
+  </table>

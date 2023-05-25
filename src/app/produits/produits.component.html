@@ -1,1 +1,6 @@
-<p>produits works!</p>
+
+<!-- composant affichant les données provenant de la page-->
+<app-display-produits [data]="produits" (id)="delete($event)"></app-display-produits>
+
+<!-- composant envoyant des données à la page -->
+<app-add-produit (data)="addProduit($event)" ></app-add-produit>

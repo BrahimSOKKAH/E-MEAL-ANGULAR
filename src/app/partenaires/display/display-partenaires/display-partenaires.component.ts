@@ -1,13 +1,13 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { PartenaireInterface, PartenaireModel } from 'src/app/partenaires/models/PartenairesModel';
+import { PartenaireInterface, PartenaireModel } from '../../models/PartenairesModel';
 
 
 @Component({
   selector: 'app-display-partenaires',
-  templateUrl: './display-produits.component.html',
-  styleUrls: ['./display-produits.component.css']
+  templateUrl: './display-partenaires.component.html',
+  styleUrls: ['./display-partenaires.component.css']
 })
-export class DisplayProduitsComponent { 
+export class DisplayPartenairesComponent {
   
   @Input() // decorateur permettant de récupérer des données du parent
 data: PartenaireInterface[] = [new PartenaireModel()] // attribut associé au décorateur

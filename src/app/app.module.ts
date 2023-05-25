@@ -18,8 +18,15 @@ import { UpdateMenuComponent } from './menus/layouts/update-menu/update-menu.com
 import { DisplayIgredientComponent } from './ingredients/display/display-ingredients.component';
 import { AddMenuComponent } from './menus/layouts/add-menu/add-menu.component';
 import { DisplayMenusComponent } from './menus/display/display-menus.component';
-import { DisplayProduitsComponent } from './produits/display/display-produits.component';
 import { EMealComponent } from './e-meal/e-meal.component';
+import { AddPartenaireComponent } from './partenaires/layouts/add-partenaire/add-partenaire.component';
+import { UpdatePartenaireComponent } from './partenaires/layouts/update-partenaire/update-partenaire.component';
+import { DisplayPartenairesComponent } from './partenaires/display/display-partenaires/display-partenaires.component';
+import { PartenairesComponent } from './partenaires/partenaires.component';
+import { AddProduitComponent } from './produits/layouts/add-produit/add-produit.component';
+import { UpdateProduitComponent } from './produits/layouts/update-produit/update-produit.component';
+import { DisplayProduitsComponent } from './produits/display/display-produits.component';
+import { ProduitsComponent } from './produits/produits.component';
 
 
 @NgModule({
@@ -31,9 +38,9 @@ import { EMealComponent } from './e-meal/e-meal.component';
     //ListesCoursesComponent,
     MenusComponent,
     //NoteRecetteComponent,
-    //PartenairesComponent,
+    PartenairesComponent,
     //PlatsComponent,
-    //ProduitsComponent,
+    ProduitsComponent,
     RecettesComponent,
     //RecettesFavoritesComponent,
     DisplayIgredientComponent,
@@ -45,8 +52,13 @@ import { EMealComponent } from './e-meal/e-meal.component';
     DisplayMenusComponent,
     AddMenuComponent,
     UpdateMenuComponent,
-    DisplayProduitsComponent,   
-    EMealComponent,   
+    DisplayProduitsComponent,
+    EMealComponent, 
+    AddPartenaireComponent, 
+    UpdatePartenaireComponent, 
+    DisplayPartenairesComponent, 
+    AddProduitComponent, 
+    UpdateProduitComponent,  
   ],
   imports: [
     BrowserModule,
