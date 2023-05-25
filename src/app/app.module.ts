@@ -19,6 +19,7 @@ import { DisplayIgredientComponent } from './ingredients/display/display-ingredi
 import { AddMenuComponent } from './menus/layouts/add-menu/add-menu.component';
 import { DisplayMenusComponent } from './menus/display/display-menus.component';
 import { DisplayProduitsComponent } from './produits/display/display-produits.component';
+import { EMealComponent } from './e-meal/e-meal.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { DisplayProduitsComponent } from './produits/display/display-produits.co
     AddMenuComponent,
     UpdateMenuComponent,
     DisplayProduitsComponent,   
+    EMealComponent,   
   ],
   imports: [
     BrowserModule,
