@@ -1,6 +1,70 @@
 
+
+
+
+<div class="toolbar" role="banner">
+    <img width="70" src="https://yt3.googleusercontent.com/qypCAZk5mdQxkIGHzupjojqpR3WA_FKhwka91-cXxz2jjb4yKZAdFoQV7ApypK9ckTHK93D1VUI=s176-c-k-c0x00ffffff-no-rj" alt="E-MEAL">
+  
+    <span>Welcome to  App E-MEAL </span>
+  
+    <div class="spacer"></div>
+    
+    <a aria-label="MEAL sur Facebook" target="_blank" rel="noopener" href="https://facebook.com/app.emeal" title="Facebook">
+      <svg id="meal-logo" height="24" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="400" fill="none"/>
+        <path d="M357.14,200c0-87.55-71.13-158.68-158.68-158.68S39.77,112.45,39.77,200,110.9,358.68,198.46,358.68,357.14,287.55,357.14,200ZM176.51,295.43V209.46h-29.7v-16.8h29.7V164.9c0-29.67,17.8-45.94,44.6-45.94a257.15,257.15,0,0,1,28.38,1.53v30.54H234.6c-15.33,0-18.25,7.27-18.25,17.93v23.54h30.94L251,209.46h-34.3v86Z" fill="#fff"/>
+      </svg>
+    </a>
+  
+    <a aria-label="MEAL on YouTube" target="_blank" rel="noopener" href="https://youtube.com/@app-emeal" title="YouTube">
+      <svg id="youtube-logo" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+        <path d="M0 0h24v24H0V0z" fill="none"/>
+        <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+      </svg>
+    </a>
+  </div>
+  
+  <nav>
+    <a routerLink="/e-meal">Page Accueil</a>
+    <a routerLink="/ingredients">Ingredients</a>
+    <a routerLink="/menus">Menus</a>
+    <a routerLink="/recettes">Recettes</a>
+    <a routerLink="/partenaires">Nos partenaires</a>
+    <a routerLink="/produits">Produits</a>
+
+    <!-- Ajoutez les autres liens de routage ici -->
+  </nav>
+  
+
 <!-- composant affichant les données provenant de la page-->
 <app-display-recettes [data]="recettes" (id)="delete($event)" ></app-display-recettes>
 
 <!-- composant envoyant des données à la page -->
 <app-add-recette (data)="addRecettes($event)" ></app-add-recette>
+
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h4>À propos de nous</h4>
+        <p>Une application qui permet aux utilisateurs de rechercher des recettes, de planifier des menus et de créer des listes de courses.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: emeal.contact@gmail.com</p>
+        <p>Téléphone: +1234567890</p>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <a href="https://facebook.com/app.emeal">Facebook</a>
+        <a href="https://youtube.com/@app-emeal">YouTube</a>
+        <a href="https://twitter.com/app.emeal">Twitter</a>
+        <a href="https://instagram.com/app.emeal">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+    
+  

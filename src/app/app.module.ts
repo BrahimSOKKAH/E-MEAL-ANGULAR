@@ -21,12 +21,12 @@ import { DisplayMenusComponent } from './menus/display/display-menus.component';
 import { EMealComponent } from './e-meal/e-meal.component';
 import { AddPartenaireComponent } from './partenaires/layouts/add-partenaire/add-partenaire.component';
 import { UpdatePartenaireComponent } from './partenaires/layouts/update-partenaire/update-partenaire.component';
-import { DisplayPartenairesComponent } from './partenaires/display/display-partenaires/display-partenaires.component';
 import { PartenairesComponent } from './partenaires/partenaires.component';
 import { AddProduitComponent } from './produits/layouts/add-produit/add-produit.component';
 import { UpdateProduitComponent } from './produits/layouts/update-produit/update-produit.component';
 import { DisplayProduitsComponent } from './produits/display/display-produits.component';
 import { ProduitsComponent } from './produits/produits.component';
+import { DisplayPartenairesComponent } from './partenaires/display/display-partenaires.component';
 
 
 @NgModule({

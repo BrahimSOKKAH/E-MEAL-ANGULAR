@@ -10,6 +10,7 @@ import { PartenairesComponent } from './partenaires/partenaires.component';
 import { UpdateMenuComponent } from './menus/layouts/update-menu/update-menu.component';
 import { UpdatePartenaireComponent } from './partenaires/layouts/update-partenaire/update-partenaire.component';
 import { UpdateProduitComponent } from './produits/layouts/update-produit/update-produit.component';
+import { ProduitsComponent } from './produits/produits.component';
 
 const routes: Routes = [
   {path:'', component: EMealComponent},
@@ -23,7 +24,7 @@ const routes: Routes = [
   //{path:'produits/update/:id', component: UpdateProduitsComponent},
   {path: 'partenaires', component: PartenairesComponent},
   {path:'partenaires/update/:id', component: UpdatePartenaireComponent},
-  {path:'produits', component: UpdateProduitComponent},
+  {path:'produits', component: ProduitsComponent},
   {path:'produits/update/:id', component: UpdateProduitComponent}, 
 
 

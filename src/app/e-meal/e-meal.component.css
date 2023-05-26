@@ -11,9 +11,16 @@ body {
     color: white;
 }
 
-.toolbar img {
-    border-radius: 50%;
+.toolbar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.toolbar1-header img {
+  border-radius: 50%;
+}
+
 .toolbar span {
     display: flex;
     align-items: center;
@@ -57,7 +64,7 @@ nav a {
 nav a:hover {
     color: #4CAF50;
 }
-footer {
+/* footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
@@ -72,11 +79,15 @@ footer {
   
   .footer-container h4 {
     margin-bottom: 10px;
+
   }
   
-  .footer-container p, .footer-container a {
+  .footer-container p,
+  .footer-container a {
     margin-bottom: 5px;
+    width: 50%;
   }
+  
   
   .footer-container a {
     color: white;
@@ -85,5 +96,68 @@ footer {
   
   .footer-container a:hover {
     text-decoration: underline;
+  } */
+/* Style général du footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Conteneur du footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Chaque élément dans le conteneur du footer */
+.footer-container > div {
+  flex-basis: 48%;
+  margin-bottom: 20px;
+}
+
+/* Titre des sections */
+.footer-container h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphe et lien dans les sections */
+.footer-container p, .footer-container a {
+  margin-bottom: 5px;
+}
+
+/* Icônes des réseaux sociaux */
+.footer-container svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* Texte du copyright */
+footer h5 {
+  font-size: 14px;
+  text-align: center;
+  color: #888;
+}
+
+  h5 {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  main {
+    padding: 20px;
+    
   }
   
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    color: #2c3e50;
+    
+  }
+

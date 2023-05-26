@@ -1,1 +1,89 @@
-/* CSS Recettes */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.toolbar img {
+    border-radius: 50%;
+}
+.toolbar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 250;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+.toolbar .spacer {
+    flex-grow: 1;
+}
+
+.toolbar a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar svg {
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.toolbar svg:hover {
+    fill: #ddd;
+}
+
+nav {
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-container p, .footer-container a {
+    margin-bottom: 5px;
+  }
+  
+  .footer-container a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+  

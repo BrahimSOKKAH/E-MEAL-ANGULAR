@@ -2,25 +2,11 @@
 
 
 <div class="toolbar" role="banner">
-    <img width="70" src="https://yt3.googleusercontent.com/qypCAZk5mdQxkIGHzupjojqpR3WA_FKhwka91-cXxz2jjb4yKZAdFoQV7ApypK9ckTHK93D1VUI=s176-c-k-c0x00ffffff-no-rj" alt="E-MEAL">
   
     <span>Welcome to  App {{ title }} </span>
   
     <div class="spacer"></div>
-    
-    <a aria-label="MEAL sur Facebook" target="_blank" rel="noopener" href="https://facebook.com/app.emeal" title="Facebook">
-      <svg id="meal-logo" height="24" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="400" fill="none"/>
-        <path d="M357.14,200c0-87.55-71.13-158.68-158.68-158.68S39.77,112.45,39.77,200,110.9,358.68,198.46,358.68,357.14,287.55,357.14,200ZM176.51,295.43V209.46h-29.7v-16.8h29.7V164.9c0-29.67,17.8-45.94,44.6-45.94a257.15,257.15,0,0,1,28.38,1.53v30.54H234.6c-15.33,0-18.25,7.27-18.25,17.93v23.54h30.94L251,209.46h-34.3v86Z" fill="#fff"/>
-      </svg>
-    </a>
-  
-    <a aria-label="MEAL on YouTube" target="_blank" rel="noopener" href="https://youtube.com/@app-emeal" title="YouTube">
-      <svg id="youtube-logo" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
-        <path d="M0 0h24v24H0V0z" fill="none"/>
-        <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
-      </svg>
-    </a>
+
   </div>
   
   <nav>
@@ -29,12 +15,32 @@
     <a routerLink="/menus">Menus</a>
     <a routerLink="/recettes">Recettes</a>
     <a routerLink="/partenaires">Nos partenaires</a>
-   
-    <!-- Ajoutez les autres liens de routage ici -->
+    <a routerLink="/produits">Produits</a>
+    <!--  les autres liens de routage  -->
   </nav>
-  
-  <div><app-display-recettes></app-display-recettes></div>
 
+  <div class="toolbar1" role="banner">
+    <div class="toolbar-header">
+        <img width="100" src="https://yt3.googleusercontent.com/qypCAZk5mdQxkIGHzupjojqpR3WA_FKhwka91-cXxz2jjb4yKZAdFoQV7ApypK9ckTHK93D1VUI=s176-c-k-c0x00ffffff-no-rj" alt="E-MEAL">
+    </div>
+</div>
+
+  <main>
+    <section>
+      <h2>Explorez nos recettes</h2>
+      <img src="https://www.grazia.fr/wp-content/uploads/grazia/2021/07/recettes-plat-leger-quesadillas-poulet-615x410.jpeg" alt="Image de recettes délicieuses">
+      <p>Découvrez une variété de recettes et trouvez votre prochain plat préféré.</p>
+      <a href="/recettes">Voir les recettes</a>
+  </section>
+  
+
+    <section>
+      <h2>Notre sélection de produits</h2>
+      <img src="https://www.lacuisinedoceane.com/wp-content/uploads/2020/06/Tous-les-produits_730x300px_06-2020-730x300.jpg" alt="Image de recettes délicieuses">
+      <p>Consultez notre liste de produits pour préparer vos recettes.</p>
+      <a href="/produits">Voir les produits</a>
+    </section>
+  </main>
    
   <footer>
     <div class="footer-container">
@@ -49,12 +55,35 @@
       </div>
       <div>
         <h4>Suivez-nous</h4>
-        <a href="https://facebook.com/app.emeal">Facebook</a>
-        <a href="https://youtube.com/@app-emeal">YouTube</a>
-        <a href="https://twitter.com/app.emeal">Twitter</a>
-        <a href="https://instagram.com/app.emeal">Instagram</a>
+
+
+        <a aria-label="MEAL sur Facebook" target="_blank" rel="noopener" href="https://facebook.com/app.emeal" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="jow_prod__sc-d1d7fdb0-0 eXTWTE jow_prod__sc-229d981d-11 jClJkD" width="24" height="24" focusable="false" role="img" fill="#ffd470"><path d="M40 .5C18.2.5.5 18.2.5 40S18.2 79.5 40 79.5 79.5 61.8 79.5 40 61.8.5 40 .5zm10.8 23.8h-5.2c-3.5 0-3.8 1.6-3.8 4.1v4.4h7.9l-1.1 9h-6.8v21.6h-9V41.8h-7.2v-9h7.2v-5.2c0-7.1 4.3-11 10.7-11 3 0 6.4.2 7.2.3v7.4z"></path></svg>
+        </a>
+      
+        <a aria-label="MEAL on YouTube" target="_blank" rel="noopener" href="https://youtube.com/@app-emeal" title="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="jow_prod__sc-d1d7fdb0-0 eXTWTE jow_prod__sc-229d981d-11 jClJkD" width="24" height="24" focusable="false" role="img" fill="#ffd470"><path d="M46.3 42.1c-1.3 0-2.4 1-2.8 1.5v-6.4h-2.8V57h2.8v-1.2c.5.6 1.4 1.4 2.8 1.4 2.4 0 2.4-3.4 2.4-3.4v-8.2c0-2-.6-3.5-2.4-3.5zm-.2 11.2s0 1.5-1.3 1.5c-.6 0-1-.3-1.3-.6v-9.1c.3-.3.7-.7 1.3-.7 1.1 0 1.3 1.5 1.3 1.5v7.4zm-10.2.9s-.9 1.1-1.7 1.1c-.9 0-.9-.6-.9-.6V42.1h-2.6v13.4s.2 1.7 2 1.7c1.7 0 3.3-1.5 3.3-1.5V57h2.6V42.1H36v12.1zM20.6 40h3.3v17H27V40h3.3v-2.8h-9.6V40zM40 .5C18.2.5.5 18.2.5 40S18.2 79.5 40 79.5 79.5 61.8 79.5 40 61.8.5 40 .5zm4.6 16.3h2.6v10.3s0 .7.9.7 1.7-1.1 1.7-1.1v-9.9h2.6v12.8h-2.6v-1.3s-1.5 1.6-3.3 1.6c-1.7 0-2-1.8-2-1.8V16.8zm-10.2 3.6c0-2 1.6-3.6 3.5-3.6h.9c1.9 0 3.5 1.6 3.5 3.6v5.8c0 2-1.6 3.6-3.5 3.6h-.9c-1.9 0-3.5-1.6-3.5-3.6v-5.8zM27 12.8l2.2 6.5 2.2-6.5h2.8l-3.5 9.9v7h-3.1v-7l-3.7-9.9H27zm35.3 43.1c0 3.6-2.9 6.5-6.5 6.5 0 0-8.1.4-16 .4-8.1 0-16-.4-16-.4-3.6 0-6.5-2.9-6.5-6.5 0 0-.7-4.2-.7-8.4s.7-8.4.7-8.4c0-3.6 2.9-6.5 6.5-6.5 0 0 8-.4 16-.4s16 .4 16 .4c3.6 0 6.5 2.9 6.5 6.5 0 0 .7 4.2.7 8.4-.1 4.2-.7 8.4-.7 8.4zm-7.2-13.8c-4.1 0-4.1 3.7-4.1 3.7v8.4s.7 3 4.1 3c3.5 0 3.9-3 3.9-3v-2.4h-2.8v1.5s0 1.5-1.3 1.5-1.3-1.5-1.3-1.5v-3.2H59v-4.3s.2-3.7-3.9-3.7zm1.1 5.8h-2.6V46s0-1.5 1.3-1.5 1.3 1.5 1.3 1.5v1.9zM38.3 27.8c.7 0 1.3-.6 1.3-1.3v-6.3c0-.7-.6-1.3-1.3-1.3-.7 0-1.3.6-1.3 1.3v6.3c0 .7.6 1.3 1.3 1.3z"></path></svg>
+        </a>
+
+        <a aria-label="MEAL sur Twitter" target="_blank" rel="noopener" href="https://twitter.com/app.emeal" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="jow_prod__sc-d1d7fdb0-0 eXTWTE jow_prod__sc-229d981d-11 jClJkD" width="24" height="24" focusable="false" role="img" fill="#ffd470"><path d="M40 .5C18.2.5.5 18.2.5 40S18.2 79.5 40 79.5 79.5 61.8 79.5 40 61.8.5 40 .5zm19.3 30.7v1.1c0 11.7-9 25.2-25.5 25.2-5.1 0-9.8-1.5-13.8-4 .7.1 1.4.1 2.1.1 4.2 0 8.1-1.4 11.2-3.8-3.9-.1-7.2-2.6-8.4-6.2.5.1 1.1.2 1.7.2.8 0 1.6-.1 2.4-.3-4.1-.8-7.2-4.4-7.2-8.7v-.1c1.2.7 2.6 1.1 4.1 1.1-2.4-1.6-4-4.3-4-7.4 0-1.6.4-3.1 1.2-4.5 4.4 5.4 11 8.9 18.5 9.3-.2-.6-.2-1.3-.2-2 0-4.9 4-8.9 9-8.9 2.6 0 4.9 1.1 6.6 2.8 2-.4 4-1.1 5.7-2.2-.7 2.1-2.1 3.8-3.9 4.9 1.8-.2 3.5-.7 5.2-1.4-1.4 2-3 3.5-4.7 4.8z"></path></svg>
+        </a>
+        
+        <a aria-label="MEAL sur Instagram" target="_blank" rel="noopener" href="https://instagram.com/app.emeal" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="jow_prod__sc-d1d7fdb0-0 eXTWTE jow_prod__sc-229d981d-11 jClJkD" width="24" height="24" focusable="false" role="img" fill="#ffd470"><path d="M40 32.8c-4 0-7.2 3.2-7.2 7.2s3.2 7.2 7.2 7.2 7.2-3.2 7.2-7.2-3.2-7.2-7.2-7.2zM40 .5C18.2.5.5 18.2.5 40S18.2 79.5 40 79.5 79.5 61.8 79.5 40 61.8.5 40 .5zm21.5 48.4c-.1 2.3-.5 3.9-1 5.2-.6 1.4-1.3 2.6-2.5 3.8-1.2 1.2-2.4 1.9-3.8 2.5-1.4.5-2.9.9-5.2 1-2.3.1-3 .1-8.9.1s-6.6 0-8.9-.1c-2.3-.1-3.9-.5-5.2-1-1.4-.6-2.6-1.3-3.8-2.5-1.2-1.2-1.9-2.4-2.5-3.8-.5-1.4-.9-2.9-1-5.2-.1-2.3-.1-3-.1-8.9s0-6.6.1-8.9c.1-2.3.5-3.9 1-5.2.6-1.4 1.3-2.6 2.5-3.8 1.2-1.2 2.4-1.9 3.8-2.5 1.4-.5 2.9-.9 5.2-1 2.3-.1 3-.1 8.9-.1s6.6 0 8.9.1c2.3.1 3.9.5 5.2 1 1.4.6 2.6 1.3 3.8 2.5 1.2 1.2 1.9 2.4 2.5 3.8.5 1.4.9 2.9 1 5.2.1 2.3.1 3 .1 8.9s0 6.6-.1 8.9zm-4.6-21.6c-.4-1-.9-1.7-1.6-2.5-.8-.8-1.5-1.2-2.5-1.6-.8-.3-1.9-.6-4-.7-2.3-.1-3-.1-8.7-.1-5.8 0-6.5 0-8.7.1-2.1.1-3.2.4-4 .7-1 .4-1.7.9-2.5 1.6-.8.8-1.2 1.5-1.6 2.5-.3.8-.6 1.9-.7 4-.1 2.3-.1 3-.1 8.7 0 5.8 0 6.4.1 8.7.1 2.1.4 3.2.7 4 .4 1 .9 1.7 1.6 2.5.8.8 1.5 1.2 2.5 1.6.8.3 1.9.6 4 .7 2.3.1 3 .1 8.7.1 5.8 0 6.5 0 8.7-.1 2.1-.1 3.2-.4 4-.7 1-.4 1.7-.9 2.5-1.6.8-.8 1.2-1.5 1.6-2.5.3-.8.6-1.9.7-4 .1-2.3.1-3 .1-8.7 0-5.8 0-6.4-.1-8.7-.1-2.1-.4-3.3-.7-4zM40 51.1c-6.1 0-11.1-5-11.1-11.1s5-11.1 11.1-11.1 11.1 5 11.1 11.1-5 11.1-11.1 11.1zm11.5-20c-1.4 0-2.6-1.2-2.6-2.6 0-1.4 1.2-2.6 2.6-2.6 1.4 0 2.6 1.2 2.6 2.6 0 1.4-1.2 2.6-2.6 2.6z"></path></svg>
+         </a>
+          <a aria-label="MEAL sur LinkedIn" target="_blank" rel="noopener" href="https://linkedin.com/company/app-emeal" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" class="jow_prod__sc-d1d7fdb0-0 eXTWTE jow_prod__sc-229d981d-11 jClJkD" width="24" height="24" focusable="false" role="img" fill="#ffd470"><path d="M40 .5C18.2.5.5 18.2.5 40S18.2 79.5 40 79.5 79.5 61.8 79.5 40 61.8.5 40 .5zm-9.9 54.8h-7.8V29.5h7.8v25.8zm-3.9-28.1c-3 0-5.5-2.5-5.5-5.5s2.4-5.5 5.5-5.5c3 0 5.5 2.5 5.5 5.5-.1 3-2.5 5.5-5.5 5.5zm33.6 28.1H52V40.4s-.3-3.9-3.9-3.9c-3.7 0-4.7 4.7-4.7 4.7s0-.1-.1-.4v14.4h-7.7V29.5h7.7v3.1c1.3-1.5 4.1-3.1 7.1-3.1 4 0 9.4 2.5 9.4 10.2v15.6z"></path></svg>
+          </a>
+          <a aria-label="MEAL sur TikTok" target="_blank" rel="noopener" href="https://tiktok.com/@app.emeal" title="TikTok">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" class="jow_prod__sc-d1d7fdb0-0 eXTWTE jow_prod__sc-229d981d-11 jClJkD" width="24" height="24" focusable="false" role="img" fill="#ffd470"><path d="M1 39.5C1 17.7 18.7 0 40.5 0S80 17.7 80 39.5 62.3 79 40.5 79 1 61.3 1 39.5Zm60-12.196C54.416 26.872 50.63 22.811 49.84 16v.014h-7.903v28.672c1.19 15.307-13.124 12.989-14.229 5.155-.573-4.09 1.492-6.408 5.135-7.647a23.614 23.614 0 0 1 3.801-.936V33.18c-16.38.59-19.507 15.322-14.4 23.717 7.946 13.047 27.711 7.359 27.711-10.843V31.725c3.888 2.362 7.23 3.615 11.045 3.24v-7.66Z"></path></svg>
+          </a>
+          
+
+        
       </div>
     </div>
+      <h5>&copy; 2023 E-MEAL </h5>
   </footer>
   
   

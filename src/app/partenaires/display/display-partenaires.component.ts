@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { PartenaireInterface, PartenaireModel } from '../../models/PartenairesModel';
+import { PartenaireInterface, PartenaireModel } from '../models/PartenairesModel';
 
 
 @Component({
